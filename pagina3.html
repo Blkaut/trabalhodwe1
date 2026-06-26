@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvimento Web: Criando Soluções para a Internet</title>
+  <link rel="STYLESHEET" href="CSS/style.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--MENU-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">DESENVOLVIMENTO WEB 1</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="pagina1.html ">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina2.html">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pagina3.html">CONTEÚDO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina4.html">CONTATO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <!--Texto-->
+  <div class="conteudoPrincipal">
+    <figure>
+      <blockquote class="blockquote">
+        <p><strong>Conteúdos a serem estudados</strong></p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        <cite title="Source Title">O que será apresentado</cite>
+      </figcaption>
+    </figure>
+    <h3>O que vamos ver?</h3>
+    <p>Durante os estudos de Desenvolvimento Web 1, diversos conceitos e tecnologias foram aprendidos para a construção
+      de
+      aplicações modernas e eficientes, como exemplos:</p>
+    <br>
+    <div class="container text-center" id="grid1">
+      <div class="row">
+        <div class="col">
+          <img src="Imagens/html.png" class="img-fluid" id="icone1">
+          <h4>HTML5</h4>
+          Utilizado para estruturar o conteúdo das páginas web, criando títulos, textos, imagens, tabelas, formulários e
+          outros elementos.
+        </div>
+        <div class="col">
+          <img src="Imagens/css.webp" class="img-fluid" id="icone1">
+          <h4>CSS3</h4>
+          Responsável pela estilização das páginas, permitindo criar layouts modernos, cores, animações e efeitos
+          visuais.
+        </div>
+        <div class="col">
+          <img src="Imagens/bootstrap.webp" class="img-fluid" id="icone1">
+          <h4>Bootstrap</h4>
+          Framework utilizado para facilitar a criação de interfaces responsivas que se adaptam a diferentes tamanhos de
+          tela.
+        </div>
+        <div class="col">
+          <img src="Imagens/JS.png" class="img-fluid" id="icone1">
+          <h4>JavaScript</h4>
+          Linguagem utilizada para adicionar interatividade às páginas, tornando os sites mais dinâmicos e funcionais.
+        </div>
+        <div class="col">
+          <img src="Imagens/responsividade.png" class="img-fluid" id="icone1">
+          <h4>Responsividade</h4>
+          Técnicas utilizadas para garantir que o site funcione corretamente em computadores, tablets e smartphones.
+        </div>
+        <div class="col">
+          <img src="Imagens/git.png" class="img-fluid" id="icone1">
+          <h4>Versionamento com Git</h4>
+          Ferramenta que auxilia no controle das alterações realizadas durante o desenvolvimento dos projetos.
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <H3>Hora do Quiz</H3>
+      <p>Fizemos um quiz simples e fácil para testar alguns conhecimentos que você tem sobre Desenvolvimento Web, caso
+        tenha interesse de fazer basta clicar no botão abaixo. Vamos lá?</p>
+      <button class="btn btn-primary" type="submit" id="btquiz" onclick="showQuiz()">Quiz!</button>
+    </div>
+    <div class="container-quiz">
+      <div id="quiz">
+        <h1 id="pergunta">Vamos começar as perguntas?</h1>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" value="A">
+          <label class="form-check-label" for="radioDefault1" id="questao1">
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" value="B">
+          <label class="form-check-label" for="radioDefault1" id="questao2">
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3" value="C">
+          <label class="form-check-label" for="radioDefault1" id="questao3">
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4" value="D">
+          <label class="form-check-label" for="radioDefault1" id="questao4">
+          </label>
+        </div>
+        <p id="resposta"></p>
+        <button class="btn btn-primary" type="button" id="botaoQuiz" onclick="proxPergunta()">Começar</button>
+      </div>
+    </div>
+  </div>
+  <script src="JS/script.js"></script>
+</body>

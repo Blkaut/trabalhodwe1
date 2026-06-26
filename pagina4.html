@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvimento Web: Criando Soluções para a Internet</title>
+  <link rel="STYLESHEET" href="CSS/style.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--MENU-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">DESENVOLVIMENTO WEB 1</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="pagina1.html ">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina2.html">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina3.html">CONTEÚDO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pagina4.html">CONTATO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="conteudoPrincipal">
+    <!--TEXTO-->
+    <div>
+      <h2>Se interessou? Entre em contato!</h2>
+      <p>Obrigado por visitar este site sobre Desenvolvimento Web.<br>Caso tenha dúvidas, sugestões ou queira saber mais
+        sobre a área de tecnologia e desenvolvimento de sistemas, utilize o formulário abaixo para entrar em contato.
+      </p>
+    </div>
+
+    <!--FORMULÁRIO-->
+    <div>
+      <form id="contato" class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Ex: Maria" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Ex: Silva" required>
+        </div>
+        <div class="col-md-3">
+          <label for="exampleFormControlInput1" class="form-label">Endereço de email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: mariasilva@gmail.com">
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault03" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="validationDefault03" placeholder="Ex: São Paulo" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Estado</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Escolha...</option>
+            <option value="AC">Acre (AC)</option>
+            <option value="AL">Alagoas (AL)</option>
+            <option value="AP">Amapá (AP)</option>
+            <option value="AM">Amazonas (AM)</option>
+            <option value="BA">Bahia (BA)</option>
+            <option value="CE">Ceará (CE)</option>
+            <option value="ES">Espírito Santo (ES)</option>
+            <option value="GO">Goiás (GO)</option>
+            <option value="MA">Maranhão (MA)</option>
+            <option value="MT">Mato Grosso (MT)</option>
+            <option value="MS">Mato Grosso do Sul (MS)</option>
+            <option value="MG">Minas Gerais (MG)</option>
+            <option value="PA">Pará (PA)</option>
+            <option value="PB">Paraíba (PB)</option>
+            <option value="PR">Paraná (PR)</option>
+            <option value="PE">Pernambuco (PE)</option>
+            <option value="PI">Piauí (PI)</option>
+            <option value="RJ">Rio de Janeiro (RJ)</option>
+            <option value="RN">Rio Grande do Norte (RN)</option>
+            <option value="RS">Rio Grande do Sul (RS)</option>
+            <option value="RO">Rondônia (RO)</option>
+            <option value="RR">Roraima (RR)</option>
+            <option value="SC">Santa Catarina (SC)</option>
+            <option value="SP">São Paulo (SP)</option>
+            <option value="SE">Sergipe (SE)</option>
+            <option value="TO">Tocantins (TO)</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="validationDefault05" placeholder="Ex: 00000-000" required>
+        </div>
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Ex: Olá, gostaria de entrar em contato..."
+            required></textarea>
+          <div class="invalid-feedback">
+            Escreva sua mensagem para entendermos o que deseja.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" id="botao" type="submit">Enviar!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="JS/script2.js"></script>
+</body>
